@@ -1,0 +1,17 @@
+{
+  "name": "testes-jasmine",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.5.2"
+  }
+}
