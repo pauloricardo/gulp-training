@@ -2,11 +2,11 @@ var gulp = require('gulp'),imagemin = require('gulp-imagemin'), clean = require(
 concat = require('gulp-concat'),uglify = require('gulp-uglify'),usemin = require('gulp-usemin');
 
 gulp.task('default', ['copy'], function(){
-    setTimeout(function(){gulp.start('usemin')}, 1000);
+    gulp.start('usemin');
 });
 
 gulp.task('copy', ['clean'], function() {
-    gulp.src('src/**/*')
+    return gulp.src('src/**/*')
     .pipe(gulp.dest('dist'));
 });
 
